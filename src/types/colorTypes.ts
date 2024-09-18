@@ -4,4 +4,4 @@ const colors = {
   light_grey: "light_grey",
 };
 
-export type Colorkeys = keyof typeof colors;
+export type ColorKeys = keyof typeof colors;

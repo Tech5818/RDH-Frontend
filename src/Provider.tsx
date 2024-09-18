@@ -4,6 +4,8 @@ import { ThemeProvider } from "styled-components";
 import { HomePage } from "@pages/HomePage";
 import { theme } from "@style/theme/Theme";
 import { GlobalStyles } from "@style/GlobalStyles";
+import { Header } from "@style/layout/Header";
+import { Footer } from "@style/layout/Footer";
 
 const queryClient = new QueryClient();
 
@@ -20,7 +22,9 @@ export const Provider = () => {
       <QueryClientProvider client={queryClient}>
         <ThemeProvider theme={theme}>
           <GlobalStyles />
+          <Header />
           <RouterProvider router={router} />
+          <Footer />
         </ThemeProvider>
       </QueryClientProvider>
     </>
